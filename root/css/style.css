@@ -127,7 +127,7 @@ span
         margin: 0;
     }
     nav .nav-list{
-        position: absolute;
+        position: fixed;
         top: 90px;
         right: -65%;
         bottom: 0;
