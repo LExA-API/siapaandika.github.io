@@ -1,40 +1,32 @@
 *{
-    padding: 0;
-    margin: 0;
+    padding: 0%;
+    margin: 0%;
     font-family: 'Courier New', Courier, monospace;
-    text-decoration: none;
-}
-body{
-    overflow-x: hidden;
+    box-sizing: border-box;
 }
 .main{
-    width: 1280px;
-    max-width: 95%;
-    margin: 0 auto;
-    padding: 0px 20px;
-}
-.porto{
     width: 100%;
     height: 100%;
     min-height: 100vh;
-    background: url(../css/images/background.jpg) rgba(0, 0, 0, 0.836);
     background-size: cover;
+    background-color: rgb(44, 35, 35);
     position: relative;
     background-position: center;
 }
-header{
-    padding: 40px 0 30px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: nowrap;
-    position: relative;
+
+nav .navi-bg{
+    height: 80px;
+    width: 100%;
+    background-color: rgb(50, 50, 71);
+    position: absolute;
+    display: inline-block;
+
 }
 nav .navbar{
     width: 35px;
     height: 24px;
     right: 3%;
-    top: 60px;
+    top: 35px;
     z-index: 5;
     background: transparent;
     position: absolute;
@@ -54,6 +46,14 @@ nav .navbar span:nth-child(2){
 }
 nav .nav-list{
     list-style: none;
+
+}
+nav ul{
+    padding-top: 20px;
+    align-items: right;
+    position: fixed;
+    margin-left: 600px;
+
 }
 nav .nav-list li{
     display: inline-block;
@@ -73,41 +73,17 @@ nav .nav-list li a{
     font-size: 18px;
     font-weight: 600;
     text-align: center;
+    text-transform: uppercase;
 }
 nav .nav-list li a:hover{
     color: red;
     transition: .3s;
 }
-.container{
-    padding-top: 100px;
-}
-.container .main-text{
-    margin-bottom: 40px;
-}
-.container .main-text h1{
-    color: white;
-    font-size: 47px;
-    font-weight: 900;
-    line-height: 1.2;
-}
 span
 {
     color: red;
 }
-.container .main-text h3{
-    color: white;
-    font-size: 17px;
-    font-weight: 400;
-}
-.container .main-text p{
-    color: white;
-    font-size: 15px;
-    max-width: 100%;
-    width: 440px;
-    margin-bottom: 30px;
-    line-height: 1.5;
-}
-@media screen and (max-width:1092px) {
+@media screen and (max-width:1312px) {
     nav .navbar{
         display: block;
     }
